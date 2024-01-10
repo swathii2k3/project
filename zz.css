@@ -1,0 +1,300 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #b8a3a3ae;
+}
+.container{
+  width: 450px;
+  background: #4ea79c;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(196, 193, 204, 0.992);
+}
+.container h2{
+  font-weight: 600;
+  font-size: 1.31rem;
+  padding: 1rem 1.75rem;
+  border-bottom: 1px solid #050505;
+}
+.wrapper{
+  margin: 1.25rem 1.75rem;
+}
+.wrapper .input-box{
+  position: relative;
+}
+.input-box input{
+  width: 100%;
+  height: 53px;
+  color: #000000;
+  background: none;
+  font-size: 1.06rem;
+  font-weight: 500;
+  border-radius: 4px;
+  letter-spacing: 1.4px;
+  border: 1px solid #040404;
+  padding: 0 2.85rem 0 1rem;
+}
+.input-box span{
+  position: absolute;
+  right: 13px;
+  cursor: pointer;
+  line-height: 53px;
+  color: #262327;
+}
+.input-box span:hover{
+  color: #000000!important;
+}
+.wrapper .pass-indicator{
+  width: 100%;
+  height: 4px;
+  position: relative;
+  background: #2d2a2081;
+  margin-top: 0.75rem;
+  border-radius: 25px;
+}
+.pass-indicator::before{
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  border-radius: inherit;
+  transition: width 0.3s ease;
+}
+.pass-indicator#weak::before{
+  width: 20%;
+  background: #3e80ba;
+}
+.pass-indicator#medium::before{
+  width: 50%;
+  background: #3e80ba;
+}
+.pass-indicator#strong::before{
+  width: 100%;
+  background: #3e80ba;
+}
+.wrapper .pass-length{
+  margin: 1.56rem 0 1.25rem;
+}
+.pass-length .details{
+  display: flex;
+  justify-content: space-between;
+}
+.pass-length input{
+  width: 100%;
+  height: 5px;
+}
+.pass-settings .options{
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.pass-settings .options .option{
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  width: calc(100% / 2);
+}
+.options .option:first-child{
+  pointer-events: none;
+}
+.options .option:first-child input{
+  opacity: 0.7;
+}
+.options .option input{
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+}
+.options .option label{
+  cursor: pointer;
+  color: #000000;
+  padding-left: 0.63rem;
+}
+.wrapper .generate-btn{
+  width: 100%;
+  color: #e8f3f8;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #01060e;
+  font-size: 1.06rem;
+  padding: 0.94rem 0;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin: 0.94rem 0 1.3rem;
+}
+header {
+    text-align: left;
+    font-weight: 800;
+    font-size: 28px;
+    border-bottom: solid 3px #DEDEDE;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  footer {
+    display: flex;
+    flex-flow: row-reverse;
+    padding: 5px 20px;
+  }
+  
+  .headers {
+    margin-top: 20px;
+    margin-bottom: -10px;
+    font-size: 20px;
+  }
+  #list-head {
+    margin-left: 2.5%;
+    width: 30.5%;
+    display: inline-block;
+    text-align: center;
+  }
+  #note-head {
+    width: 140%;
+    margin: left 0;
+    margin-top: 10;
+    display: inline-block;
+    text-align: center;
+  }
+  notePad {
+    display: inline-block;
+    border: solid 3px black;
+    border-radius: 10px;
+    height: 400px;
+    overflow: scroll;
+    width: 150%;
+    margin-left:20%;
+    margin-top: 5%;
+  }
+  
+  #note-title {
+    font-size: 24px;
+    padding: 0 0 5px 5px;
+    border-bottom: solid 2px #DEDEDE;
+  }
+  
+  #note-body {
+    padding: 5px;
+  }
+  
+  #body-field, #title-field {
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+  }
+  
+  #title-field {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  #body-field {
+    font-size: 14px;
+    font-weight: 500;
+    height: 400px;
+  }
+  
+  #color-select {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    padding: 5px 10px 0 0;
+    margin-left:20%;
+  }
+  .color-box {
+    border: solid 2px #929292;
+    height: 10px;
+    width: 10px;
+    margin-left:5px
+  }
+  .display {
+    display: visible;
+  }
+  
+  .no-display {
+    display: none;
+  }
+  button{
+    margin: 5PX;
+    border: solid 3px grey ;
+    border-radius: 10%;
+    font-size:22px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #DEDEDE;
+  }
+  button:hover, .color-box:hover{
+    cursor: pointer;
+  }
+
+  #listed:nth-child(odd):hover{
+    cursor: pointer;
+  }
+
+  #btn-save{
+    background-color:  #2f5032;
+  }
+  #btn-delete{
+    background-color: #cdc41b;
+  }
+  
+  .white {
+    background-color: white;
+  }
+  
+  .orange {
+    background-color: #FFD37F;
+  }
+  
+  .banana {
+    background-color: #FFFA81;
+  }
+  
+  .honeydew {
+    background-color: #D5FA80;
+  }
+  
+  .flora {
+    background-color: #78F87F;
+  }
+  
+  .aqua {
+    background-color: #79FBD6;
+  }
+  
+  .ice {
+    background-color: #79FDFE;
+  }
+  
+  .sky {
+    background-color: #7AD6FD;
+  }
+  
+  .orchid {
+    background-color: #7B84FC;
+  }
+  
+  .lavendar {
+    background-color: #D687FC;
+  }
+  
+  .pink {
+    background-color: #FF89FD;
+  }
+
+
+
+
+
+
+
